@@ -138,6 +138,13 @@ while True:
                 else:
                     wdType = 0
                     print("6wd is active")
+            if joystick.get_button(4) == 1:
+                if wdType == 0:
+                    print("6wd is active")
+                if wdType == 1:
+                    print("4wd is active")
+                if wdType == 2:
+                    print("2wd is active")
 
             if joystick.get_button(6) == 1 and speed !=0:
                 speed -= step
